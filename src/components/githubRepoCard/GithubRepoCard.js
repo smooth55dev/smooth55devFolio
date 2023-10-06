@@ -42,10 +42,7 @@ export default function GithubRepoCard({repo, isDark}) {
             <div className="repo-left-stat">
               {repo.node.primaryLanguage !== null && (
                 <span>
-                  <div
-                    className="language-color"
-                    style={{backgroundColor: repo.node.primaryLanguage.color}}
-                  ></div>
+                  <div className="language-color" style={{backgroundColor: repo.node.primaryLanguage.color}} ></div>
                   <p>{repo.node.primaryLanguage.name}</p>
                 </span>
               )}

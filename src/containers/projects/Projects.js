@@ -18,14 +18,10 @@ export default function Projects() {
     const getRepoData = () => {
       fetch("/profile.json")
         .then(result => {
-          if (result.ok) {
-            return result.json();
-          }
+          if (result.ok) { return result.json(); }
           throw result;
         })
-        .then(response => {
-          setrepoFunction(response.data.user.pinnedItems.edges);
-        })
+        .then(response => { setrepoFunction(response.data.user.pinnedItems.edges); })
         .catch(function (error) {
           console.error(
             `${error} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
@@ -46,13 +42,11 @@ export default function Projects() {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
+          <h1 className="project-title">{openSource.title}</h1>
           <div className="repo-cards-div-main">
             {repo.map((v, i) => {
               if (!v) {
-                console.error(
-                  `Github Object for repository number : ${i} is undefined`
-                );
+                console.error( `Github Object for repository number : ${i} is undefined` );
               }
               return (
                 <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />

@@ -24,14 +24,8 @@ export default function Blogs() {
     if (blogSection.displayMediumBlogs === "true") {
       const getProfileData = () => {
         fetch("/blogs.json")
-          .then(result => {
-            if (result.ok) {
-              return result.json();
-            }
-          })
-          .then(response => {
-            setMediumBlogsFunction(response.items);
-          })
+          .then(result => { if (result.ok) { return result.json(); } })
+          .then(response => { setMediumBlogsFunction(response.items); })
           .catch(function (error) {
             console.error(
               `${error} (because of this error Blogs section could not be displayed. Blogs section has reverted to default)`
@@ -43,19 +37,13 @@ export default function Blogs() {
       getProfileData();
     }
   }, []);
-  if (!blogSection.display) {
-    return null;
-  }
+  if (!blogSection.display) { return null; }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="blogs">
         <div className="blog-header">
           <h1 className="blog-header-text">{blogSection.title}</h1>
-          <p
-            className={
-              isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"
-            }
-          >
+          <p className={ isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle" } >
             {blogSection.subtitle}
           </p>
         </div>

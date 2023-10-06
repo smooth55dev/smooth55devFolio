@@ -3,9 +3,7 @@ import "./SocialMedia.scss";
 import {socialMediaLinks} from "../../portfolio";
 
 export default function socialMedia() {
-  if (!socialMediaLinks.display) {
-    return null;
-  }
+  if (!socialMediaLinks.display) { return null; }
   return (
     <div className="social-media-div">
       {socialMediaLinks.github ? (

@@ -1,5 +1,3 @@
-/* Change this file to get your personal Portfolio */
-
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
@@ -19,30 +17,37 @@ const illustration = {
   animated: true // Set to false to use static SVG
 };
 
+const title = {
+  skills : "Skills",
+  experience : "Work Experiences",
+  opensource : "Open Source",
+  achievements : "Achievements",
+  blogs : "Blogs",
+  talks : "Talks",
+  contact : "Contact Me"
+}
+
 const greeting = {
   username: "Anselm Kiler",
-  title: "皆さんこんにちは、アンセルムです",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  title: "Hello everyone, I'm Anselm.",
+  subTitle: emoji( "I would introduce myself in five words. Passionate coder,  best colleague ever. That pretty much sums it up, though at least the last one my former colleagues have to confirm. I try to do a good job in all roles I have in life, and I enjoy the process immensely. 🚀" ),
+  resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/smooth55dev",
+  linkedin: "https://www.linkedin.com/in/smooth55dev/",
+  gmail: "smooth@gmail.com",
+  gitlab: "https://gitlab.com/smooth55dev",
+  facebook: "https://www.facebook.com/smooth55dev",
+  medium: "https://medium.com/@smooth55dev",
+  stackoverflow: "https://stackoverflow.com/users/10422806/smooth55dev",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 // Skills Section
@@ -51,13 +56,10 @@ const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji( "⚡ I am fluent in classics like Go , Typescript , Javascript and Python" ),
+    emoji("⚡ My field of Interest's are building new  Web Technologies and Products and also in areas related to Deep Learning and Natural Launguage Processing."),
+    emoji("⚡ Whenever possible, I also apply my passion for developing products with  Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji( "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean" )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -126,6 +128,7 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
+      title : "Education",
       schoolName: "Trier University of Applied Sciences",
       logo: require("./assets/images/harvardLogo.png"),
       subHeader: "Master of Science in Computer Science",
@@ -142,6 +145,7 @@ const educationInfo = {
 
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
+  title : "Proficiency",
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -162,6 +166,7 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
+  title : "Experiences",
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
@@ -209,6 +214,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
+  title : "Open Source Projects",
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
@@ -352,17 +358,15 @@ const blogSection = {
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
       title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+      description: "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
     },
     {
       url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
       title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+      description: "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -399,8 +403,7 @@ const podcastSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
   // number: "+92-0000000000",
   email_address: "smooth55dev@gmail.com"
 };
@@ -408,14 +411,22 @@ const contactInfo = {
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
+  userName: "ura_txtx", //Replace "twitter" with your twitter username without @
+  cantDisplayError : "Can't load? Check privacy protection settings",
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+
+const footer = {
+  title : emoji("Made with ❤️ by DeveloperFolio Team"),
+  repo : "https://github.com/saadpasta/developerFolio",
+  repoName : "developerFolio"
+}
 
 export {
   illustration,
+  title,
   greeting,
   socialMediaLinks,
   splashScreen,
@@ -431,5 +442,6 @@ export {
   podcastSection,
   contactInfo,
   twitterDetails,
+  footer,
   isHireable
 };

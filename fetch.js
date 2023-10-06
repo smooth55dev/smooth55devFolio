@@ -23,38 +23,36 @@ if (USE_GITHUB_DATA === "true") {
 
   console.log(`Fetching profile data for ${GITHUB_USERNAME}`);
   var data = JSON.stringify({
-    query: `
-{
-  user(login:"${GITHUB_USERNAME}") { 
-    name
-    bio
-    avatarUrl
-    location
-    pinnedItems(first: 6, types: [REPOSITORY]) {
-      totalCount
-      edges {
-          node {
-            ... on Repository {
-              name
-              description
-              forkCount
-              stargazers {
-                totalCount
-              }
-              url
-              id
-              diskUsage
-              primaryLanguage {
-                name
-                color
+    query: `{
+      user(login:"${GITHUB_USERNAME}") { 
+        name
+        bio
+        avatarUrl
+        location
+        pinnedItems(first: 6, types: [REPOSITORY]) {
+          totalCount
+          edges {
+              node {
+                ... on Repository {
+                  name
+                  description
+                  forkCount
+                  stargazers {
+                    totalCount
+                  }
+                  url
+                  id
+                  diskUsage
+                  primaryLanguage {
+                    name
+                    color
+                  }
+                }
               }
             }
           }
         }
-      }
-    }
-}
-`
+    }`
   });
   const default_options = {
     hostname: "api.github.com",
