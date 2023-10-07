@@ -1,7 +1,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/groovyWalk.json"; // Rename to your file name for custom animation
 
 // Splash Screen
 
@@ -29,8 +29,8 @@ const title = {
 
 const greeting = {
   username: "Anselm Kiler",
-  title: "Hello everyone, I'm Anselm.",
-  subTitle: emoji( "I would introduce myself in five words. Passionate coder,  best colleague ever. That pretty much sums it up, though at least the last one my former colleagues have to confirm. I try to do a good job in all roles I have in life, and I enjoy the process immensely. 🚀" ),
+  title: "Hi there, folks! I go by the name of Anselm.",
+  subTitle: emoji( "Five words to sum me up: devoted coder, unparalleled coworker. The latter, though, is subject to the opinions of my past colleagues. Nevertheless, I always strive to excel in all my roles and relish the process. 🚀" ),
   resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -53,13 +53,13 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "My livelihood",
+  subTitle: "As a tech lover and skilled full stack developer, I'm constantly seeking out new technology stacks to explore.",
   skills: [
-    emoji( "⚡ I am fluent in classics like Go , Typescript , Javascript and Python" ),
-    emoji("⚡ My field of Interest's are building new  Web Technologies and Products and also in areas related to Deep Learning and Natural Launguage Processing."),
-    emoji("⚡ Whenever possible, I also apply my passion for developing products with  Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji( "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean" )
+    emoji( "⚡I possess a strong proficiency in several widely-used programming languages, including Go, Typescript, Javascript, and Python." ),
+    emoji("⚡ My area of expertise centers around the development of cutting-edge web technologies and products, as well as exploring topics related to deep learning and natural language processing."),
+    emoji("⚡ I am passionate about creating products using Progressive Web Applications (PWA) in both traditional and single-page application (SPA) stacks, and I strive to bring this enthusiasm to every project I undertake."),
+    emoji( "⚡ I have extensive experience integrating third-party services such as Firebase, AWS, and Digital Ocean into a variety of applications, and I am adept at incorporating these services to enhance the functionality of my projects." )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -89,6 +89,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
+    },
+    {
+      skillName: "flutter",
+      fontAwesomeClassname: "fab fa-apple"
     },
     {
       skillName: "swift",
@@ -172,39 +176,39 @@ const workExperiences = {
     {
       role: "Software Engineer",
       company: "Software Ag",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: "data:image/jpeg;base64,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",
       date: "June 2022 – Oct 2022",
-      desc: "Software AG is an enterprise software & technology company with industry-leading suite of products & solutions in API management, IoT, & business transformation.",
+      desc: "Software AG is an enterprise software and technology company that offers a suite of industry-leading products and solutions in areas such as API management, IoT, and business transformation.",
       descBullets: [
-        "Built and integrated multiple APIs for the company's website and mobile app, resulting in a significant increase in user engagement and revenue.",
-        "Conducted through testing and debugging of APIs to ensure optimal performance and scalability.",
-        "Collaborated with croww-functional teams including product managers, designers and QA engineers to deliver high-quality software solutions.",
-        "Implemented agile methodologies to streamline development processes and increase productovoty."
+        "I built and integrated multiple APIs for the company's website and mobile app, which resulted in a significant increase in user engagement and revenue.",
+        "I conducted thorough testing and debugging of APIs to ensure optimal performance and scalability.",
+        "I collaborated with cross-functional teams, including product managers, designers, and QA engineers, to deliver high-quality software solutions.",
+        "I implemented agile methodologies to streamline development processes and increase productivity."
       ]
     },
     {
       role: "Front-End Developer",
       company: "Siemens",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      companylogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVgckqjCWRl9t8ZQto1_mvR9kuG18M-s1ocygz64KfGZe5ZRNIEFmKGCMfbfAVT1xkFxQ&usqp=CAU",
       date: "May 2020 – May 2022",
-      desc: "WebVisit Siemens, the technology company focused on industry, infrastructure, transport, and healthcare.",
+      desc: "WebVisit Siemens is a technology company focused on industry, infrastructure, transport, and healthcare.",
       descBullets: [
-        "Monitored and improved front-end performance by 15% and documented application changes & worked on updates. ",
-        "Developed the latest user-facing features using React.js and built reusable components & front- end libraries for future use. ",
-        "Built internal tool using NodeJS and Pupeteer.js to automate QA and monitoring of donor- facing web app, which improved CTR by 3%. ",
-        "Collaborated on Complexity Score tool, which removed process bottlenecks by assigning to cost, time, and compliance issues, increasing efficiency by 72%."
+        "I monitored and improved front-end performance by 15%, documented application changes, and worked on updates. ",
+        "Using React.js, I developed the latest user-facing features and built reusable components and front-end libraries for future use.",
+        "To automate QA and monitoring of the donor-facing web app, I built an internal tool using NodeJS and Pupeteer.js, which improved CTR by 3%. ",
+        "Additionally, I collaborated on the Complexity Score tool, which assigned cost, time, and compliance issues to remove process bottlenecks and increase efficiency by 72%."
       ]
     },
     {
       role: "Software Engineer Intern",
       company: "Leoni Ag",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2017 – Sep 2019",
-      desc: "LEONI is a global supplier of wires, cables and wiring systems as well as a provider of related development services. The principal customer base is the automotive industry, for which LEONI develops and makes technically sophisticated products: from single-core automotive cables through to complete wiring systems with integrated electronics.",
+      companylogo: "data:image/jpeg;base64,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",
+      date: "Jan 2019 – Sep 2019",
+      desc: "LEONI is a worldwide supplier of wires, cables, and wiring systems, and also offers development services related to these products. The company primarily serves the automotive industry, providing technically advanced products ranging from single-core automotive cables to fully integrated wiring systems with electronics.",
       descBullets: [
-        "Identified web-based user interactions and developed highly-responsive user interface components via React concepts. ",
-        "Translated designs & wireframes into high-quality code and wrote application interface code via JavaScript following React.js workflows. ",
-        "Troubleshot interface software and debugged application codes to improve functionality and performance by 50%."
+        "I identified user interactions on web-based platforms and utilized React concepts to develop highly-responsive user interface components. ",
+        "Additionally, I translated designs and wireframes into high-quality code, writing application interface code using JavaScript and following React.js workflows.",
+        "To improve functionality and performance by 50%, I also troubleshooted interface software and debugged application codes."
       ]
     }
   ]
@@ -226,9 +230,9 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/InteractiveBrokersLogo3.png"),
       projectName: "InteractiveBrokers",
-      projectDesc: "In this project, I developed a data extraction tool that automated the process of collecting financial data from multiple sources. These projects showcase my ability to develop user-friendly interfaces, integrate third-party APIs, and build scalable applications that can handle high traffic volume.",
+      projectDesc: "I demonstrated my skills in developing user-friendly interfaces, integrating third-party APIs, and building scalable applications that can handle high traffic volume through the development of a data extraction tool. This tool automated the process of collecting financial data from multiple sources, showcasing my ability to create efficient and effective solutions.",
       footerLink: [
         {
           name: "Visit Website",
@@ -238,20 +242,9 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Kaplan",
-      projectDesc: "Join Kaplan as we support our students and partners to meet their diverse and evolving needs throughout their educational and professional journeys.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://kaplan.com/"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: "https://audiocityusa.com/shop/skin/iblueweb2/images/custom/img_main_popular_blowout_deals.webp",
       projectName: "AUDIOCITYusa",
-      projectDesc: "Will be taking API info from  Wheel Fitment API (https://developer.wheel-size.com/)  to design a filter system for Cars to be able to filter out wheel options based on Wheel Diameter, Width and Bolt Pattern.",
+      projectDesc: "I am integrating the Wheel Fitment API (https://developer.wheel-size.com/) to develop a filter system for cars that will allow users to sort through wheel options based on wheel diameter, width, and bolt pattern.",
       footerLink: [
         {
           name: "Visit Website",
@@ -260,28 +253,16 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: "https://lh3.googleusercontent.com/ReBuXIrmiHPfTgrMDqxzr428HHqdZJAXRslx2mjPwQv4wwdpnBv7d_L1Bbf6_GQzNQWhYpWCHJq6XjjRc6ba0_RcZz2ugBDTUIbu=e365-pa-nu-w416-rw",
       projectName: "Snap-a-Dot",
-      projectDesc: "Snap-a-Dot is a small web preview of the Peridot app which features the Illustrious Dot, Kee! \n In Snap-a-Dot you can interact with Kee in the real world and snap adorable photos together while you’re out adventuring.\nImplemented in Flutter.",
+      projectDesc: "Snap-a-Dot is a web-based preview of the Peridot app that showcases the Illustrious Dot, Kee! With Snap-a-Dot, users can engage with Kee in the real world and capture cute photos while on their adventures. The app was developed using Flutter.",
       footerLink: [
         {
           name: "Visit Website",
           url: "https://playperidot.com/"
         }
       ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Chicken Salad Chick",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://play.google.com/store/apps/details?id=com.cardeeo.chickensaladchick"
-        }
-      ]
     }
-
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -292,27 +273,19 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "ACCOMPLISHMENTS OF PROUD OF ME",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Google Code-In Mentors",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+        "Participated as a Google Code-in mentor in 2017.",
+      image: "https://opensource.google/static/images/os-anim-main.gif",
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
           name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "https://opensource.googleblog.com/2018/01/"
         }
       ]
     },
@@ -320,12 +293,12 @@ const achievementSection = {
       title: "Google Assistant Action",
       subtitle:
         "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      image: "https://play-lh.googleusercontent.com/ORzWxi-sIo_hCgSa6uzVvBUE4osKUqRVzHnniUUxA2WXD7BnZ95BNVpWFLUTKRyJRdU=w240-h480-rw",
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
           name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          url: "https://developers.google.com/assistant"
         }
       ]
     },
@@ -333,13 +306,12 @@ const achievementSection = {
     {
       title: "PWA Web App Developer",
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      image: "https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/LvIq0sbMK73ycjb2yomw.svg",
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
           name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          url: "https://synergy-fukuyama.com/"
         }
       ]
     }
