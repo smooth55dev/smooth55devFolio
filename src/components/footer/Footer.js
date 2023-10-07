@@ -13,7 +13,6 @@ export default function Footer() {
           { footer.title }
         </p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Theme by{" "}
           <a href= { footer.repo } >
             { footer.repoName }
           </a>

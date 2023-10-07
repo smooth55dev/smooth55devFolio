@@ -134,9 +134,9 @@ const educationInfo = {
     {
       title : "Education",
       schoolName: "Trier University of Applied Sciences",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/Hochschule_Trier,_University_of_Applied_Sciences.png"),
       subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
+      duration: "April 2013 - July 2016",
       desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
         "In my university the students' social competences are promoted by project and team oriented study methods. Research and development at Trier University of Applied Sciences aim at practice- and market-oriented results and address current issues in business and society."
@@ -253,8 +253,8 @@ const bigProjects = {
       ]
     },
     {
-      image: "https://lh3.googleusercontent.com/ReBuXIrmiHPfTgrMDqxzr428HHqdZJAXRslx2mjPwQv4wwdpnBv7d_L1Bbf6_GQzNQWhYpWCHJq6XjjRc6ba0_RcZz2ugBDTUIbu=e365-pa-nu-w416-rw",
-      projectName: "Snap-a-Dot",
+      image: require("./assets/images/aliexpress.png"),
+      projectName: "AliExpress Shopping App",
       projectDesc: "Snap-a-Dot is a web-based preview of the Peridot app that showcases the Illustrious Dot, Kee! With Snap-a-Dot, users can engage with Kee in the real world and capture cute photos while on their adventures. The app was developed using Flutter.",
       footerLink: [
         {
@@ -277,16 +277,19 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Mentors",
+      title: "The EdTech Cool Tool Awards",
       subtitle:
-        "Participated as a Google Code-in mentor in 2017.",
-      image: "https://opensource.google/static/images/os-anim-main.gif",
+        "In 2017, Joined the Demos team and participated in the development of the Demos app.",
+      image: "https://www.desmos.com/assets/img/frontpage/Homepage-image-L1.png",
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2018/01/"
-        }
+          name: "EdTech List",
+          url: "https://www.edtechdigest.com/the-edtech-awards/"
+        },{
+          name: "Demos Website",
+          url: "https://www.desmos.com/"
+        },
       ]
     },
     {
@@ -391,9 +394,9 @@ const twitterDetails = {
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 const footer = {
-  title : emoji("Made with ❤️ by DeveloperFolio Team"),
+  title : emoji("Made with ❤️ by Anselm Kiler"),
   repo : "https://github.com/saadpasta/developerFolio",
-  repoName : "developerFolio"
+  repoName : "08 / 10 / 2023"
 }
 
 export {
