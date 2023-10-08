@@ -137,7 +137,7 @@ const educationInfo = {
       logo: require("./assets/images/Hochschule_Trier,_University_of_Applied_Sciences.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "April 2013 - July 2016",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      desc: "Participated in the research of Structured program theorem and published 3 papers.",
       descBullets: [
         "In my university the students' social competences are promoted by project and team oriented study methods. Research and development at Trier University of Applied Sciences aim at practice- and market-oriented results and address current issues in business and society."
       ]
@@ -388,7 +388,7 @@ const contactInfo = {
 const twitterDetails = {
   userName: "ura_txtx", //Replace "twitter" with your twitter username without @
   cantDisplayError : "Can't load? Check privacy protection settings",
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
